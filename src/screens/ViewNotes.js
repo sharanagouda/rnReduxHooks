@@ -11,7 +11,7 @@ function ViewNotes({ navigation }) {
   const dispatch = useDispatch()
   const addNote = note => dispatch(addnote(note))
   const deleteNote = id => dispatch(deletenote(id))
-
+  console.log("state View list", notes)
   return (
     <>
       <Header titleText='Simple Note Taker' />
